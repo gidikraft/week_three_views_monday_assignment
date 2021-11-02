@@ -5,53 +5,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="15dp">
 
         <View
             android:id="@+id/view_1"
-            android:layout_width="match_parent"
+            android:background="@color/grid_1_purple"
             android:layout_height="150dp"
-            android:background="@color/purple_500"
-            android:layout_marginBottom="20dp"
-            />
+            android:layout_width="match_parent"
+            style="@style/View_changes"/>
 
         <View
             android:id="@+id/view_2"
-            android:layout_width="match_parent"
+            android:background="@color/grid_2_green"
             android:layout_height="100dp"
-            android:background="@color/teal_700"
             android:layout_below="@+id/view_1"
-            android:layout_marginBottom="20dp"
-            />
+            style="@style/View_changes"/>
 
         <View
             android:id="@+id/view_3"
-            android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_below="@+id/view_2"
-            android:layout_marginBottom="20dp"
-            android:background="@android:color/holo_orange_dark" />
+            android:background="@android:color/holo_orange_dark"
+            style="@style/View_changes"/>
 
         <View
             android:id="@+id/view_4"
-            android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_below="@+id/view_3"
-            android:layout_marginBottom="20dp"
-            android:background="@color/teal_200" />
+            android:background="@color/teal_200"
+            style="@style/View_changes"/>
 
         <View
             android:id="@+id/view_5"
-            android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_below="@+id/view_4"
-            android:layout_marginBottom="20dp"
-            android:background="@color/design_default_color_error" />
+            android:background="@color/design_default_color_error"
+            style="@style/View_changes"/>
 
     </RelativeLayout>
 </ScrollView>
